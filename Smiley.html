@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emojis</title>
+    <link rel="icon" href="https://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2015/4/21/1429629869293/d8e257bb-a76d-49e7-989a-39e07196a915-2060x1236.jpeg" type="image/x-icon">
+</head>
+<style>
+
+    body{
+        background-color: rgb(5, 11, 16);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    canvas{
+        border-radius: 5px;
+        background-color: #ffff;
+        height: 80%;
+        width: 80%;
+    }
+</style>
+
+<body>
+    <canvas id="canvas"></canvas>
+</body>
+
+<script>
+    const canvas = document.getElementById('canvas')
+    const ctx = canvas.getContext('2d')
+
+    ctx.beginPath();
+    ctx.arc(70,70,30,0,Math.PI*2)
+    ctx.strokeStyle = "Black";
+    ctx.stroke()
+    ctx.fillStyle="Yellow";
+    ctx.fill() 
+    ctx.closePath();
+
+    ctx.beginPath();
+    ctx.arc(55,63,6,0,Math.PI*2)
+    ctx.strokeStyle = "Black";
+    ctx.stroke()
+    ctx.fillStyle="Black";
+    ctx.fill() 
+    ctx.closePath();
+
+    ctx.beginPath();
+    ctx.arc(85,63,6,0,Math.PI*2)
+    ctx.strokeStyle = "Black";
+    ctx.stroke()
+    ctx.fillStyle="Black";
+    ctx.fill() 
+    ctx.closePath();
+
+    ctx.beginPath();
+    ctx.arc(70,75,15,0,Math.PI)
+    ctx.strokeStyle = "Black";
+    ctx.stroke()
+    ctx.fillStyle="RED";
+    ctx.fill() 
+    ctx.closePath();
+
+    
+
+</script>
+</html>
